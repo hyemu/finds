@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="main.css" rel="stylesheet">
+  <style>
+        @font-face {
+  font-family: 'SF Pro Display';
+  src: url('SFPRODISPLAYREGULAR.OTF') format('opentype');
+
+}
+    html {
+      background: linear-gradient(45deg, #000, #fbfbe9, #da4670);
+      background-size: 600% 600%;
+      animation: pulsatingGradient 14s ease infinite;
+    }
+
+    @keyframes pulsatingGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+  
+    .hero01-container {
+      position: inherit;
+      margin-bottom: 0; /* Remove the default margin-bottom value */
+    }
+  
+    .hero01-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0; /* Remove the left padding */
+      padding-right: 0; /* Remove the right padding */
+      margin: 0; /* Remove any default margins */
+      position: fixed;
+      width: 100%;
+      top: 0; /* Position the navbar at the top of the page */
+      left: 0; /* Position the navbar at the left edge of the page */
+      right: 0; /* Position the navbar at the right edge of the page */
+      background-color: #000;
+      color: #fff;
+      font-size: 40px;
+    }
+  
+    .hero01-navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  
+    .hero01-navbar a:hover {
+      color: #ccc;
+    }
+  
+    .hero01-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .hero01-logo img {
+      width: 120px;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+  
+    /* Team section styles */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'SF Pro Display';
+      flex-wrap: wrap;
+      margin: 100px auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .team-member {
+      flex: 1 1 300px;
+      text-align: center;
+      margin: 20px;
+    }
+  
+    .team-member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .team-member-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  
+    .team-member-position {
+      font-size: 18px;
+      color: #777;
+      margin-top: 10px;
+    }
+  
+    .team-member-description {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="hero01-container">
+    <div class="hero01-hero01">
+      <div class="hero01-navbar">
+        <div class="hero01-logo">
+          <a href="index.html"><img alt="Logo" src="logo.png"></a>
+          <div class="hero01-frame4">
+            <span class="hero01-text"><a href="shop.html">Shop</a></span>
+            <span class="hero01-text02"><a href="team.html">Team</a></span>
+            <span class="hero01-text04"><a href="about.html">About</a></span>
+            <div class="hero01-group6">
+              <img alt="SearchI162" src="search9.svg" class="hero01-search">
+              <span class="hero01-text06"  style="color: white;">Search</span>
+            </div>
+          </div>
+          <img alt="Line1I162" src="line36t.svg" class="hero01-line1">
+          <div class="hero01-frame5">
+            <div class="hero01-group4">
+              <span class="hero01-text08"  style="color: white;">3</span>
+              <img alt="VectorI162" src="vectorer7.svg" class="hero01-vector">
+            </div>
+            <span class="hero01-text09"  style="color: white;">Login</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="team-container">
+      <div class="team-member">
+        <img src="gab.jpg" alt="Profile Picture">
+        <div class="team-member-name">Gabriel Ventura</div>
+        <div class="team-member-position">CEO</div>
+        <div class="team-member-description">
+          A visionary leader at the helm of RareFinds™, Gabriel curates an exceptional collection of rare items, captivating collectors worldwide.
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="drake.jpg" alt="Profile Picture">
+        <div class="team-member-name">Raven Drake Cruz</div>
+        <div class="team-member-position">COO</div>
+        <div class="team-member-description">
+          With a passion for efficiency and a keen eye for detail, Raven oversees the seamless operations at RareFinds™, ensuring unparalleled customer satisfaction.
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="robert.jpg" alt="Profile Picture">
+        <div class="team-member-name">Robert Leoni Mirabel</div>
+        <div class="team-member-position">CFO</div>
+        <div class="team-member-description">
+          As the astute CFO of RareFinds™, Robert expertly manages finances, optimizing revenue streams and driving strategic decisions for the sustainable growth of the rare item and goods marketplace.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

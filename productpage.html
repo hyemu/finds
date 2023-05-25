@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="main.css" rel="stylesheet">
+
+   <style>
+    html {
+      background: linear-gradient(45deg, #000, #fbfbe9, #da4670);
+      background-size: 600% 600%;
+      animation: pulsatingGradient 20s ease infinite;
+    }
+
+    @keyframes pulsatingGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .product-page {
+  display: flex;
+  margin-top: 50%;
+  margin-right: 24%;
+  margin-left: 20%;
+  align-items: center;
+
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('SFPRODISPLAYREGULAR.OTF') format('opentype');
+
+}
+.hero01-container {
+  position: inherit;
+  overflow: hidden;
+  margin-bottom: 0; /* Remove the default margin-bottom value */
+}
+
+
+.hero01-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0; /* Remove the left padding */
+  padding-right: 0; /* Remove the right padding */
+  margin: 0; /* Remove any default margins */
+  position: fixed;
+  width: 100%;
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0; /* Position the navbar at the left edge of the page */
+  right: 0; /* Position the navbar at the right edge of the page */
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+}
+
+    .hero01-navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .hero01-navbar a:hover {
+      color: #ccc;
+    }
+
+    .hero01-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .hero01-logo img {
+      width: 120px;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+.product-image {
+      width: 200px; /* Adjust the width as needed */
+      height: auto; /* This will maintain the aspect ratio of the image */
+      flex: 2;
+      padding-right: 10px;
+      padding-left: -10px;
+    }
+.product-details {
+  flex: 1;
+}
+
+.product-title {
+    font-family: 'SF Pro Display';
+  font-size: 120px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: -100px;
+}
+
+.product-description {
+  margin-top: 100px;
+  font-size: 10px;
+  margin-bottom: -20px;
+  font-family: 'SF Pro Display';
+  color: #000;
+}
+
+.product-image-select {
+  margin-bottom: 20px;
+}
+
+.checkout-button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+   </style>
+</head>
+<body>
+  <div class="hero01-container">
+    <div class="hero01-hero01">
+      <div class="hero01-navbar">
+        <div class="hero01-logo">
+          <img alt="Logo" src="logo.png">
+          <div class="hero01-frame4">
+            <span class="hero01-text"><a href="shop.html">Shop</a></span>
+            <span class="hero01-text02"><a href="team.html">Team</a></span>
+            <span class="hero01-text04"><a href="about.html">About</a></span>
+            <div class="hero01-group6">
+              <img alt="SearchI162" src="search9.svg" class="hero01-search">
+              <span class="hero01-text06"  style="color: white;">Search</span>
+            </div>
+          </div>
+          <img alt="Line1I162" src="line36t.svg" class="hero01-line1">
+          <div class="hero01-frame5">
+            <div class="hero01-group4">
+              <span class="hero01-text08"  style="color: white;">3</span>
+              <img alt="VectorI162" src="vectorer7.svg" class="hero01-vector">
+            </div>
+            <span class="hero01-text09"  style="color: white;">Login</span>
+          </div>
+          </div>
+  <div class="product-page">
+    <div class="product-image">
+      <img src="image-removebg-preview.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h1 class="product-title">Boa Hancock</h1>
+      <p class="product-description">Bring the elegance and allure of Boa Hancock, the Snake Princess, to your collection with this stunning figurine. Boa Hancock is a beloved character from the popular anime and manga series, One Piece. This meticulously crafted figurine captures her captivating beauty and fierce personality.</p>
+      <p class="product-description">Product Dimensions: Height: 10 inches | Width: 5 inches | Depth: 4 inches</p>
+      <select class="product-image-select" onchange="changeImage(this)">
+        <option value="image-removebg-preview.png">Front View</option>
+        <option value="bo.png">Back View</option>
+      </select>
+      <button class="checkout-button"><a href="checkout.html">Checkout</a></button>
+    </div>
+    
+    </div>
+  </div>
+  
+  <script>
+    function changeImage(selectElement) {
+      var imageElement = document.querySelector('.product-image img');
+      imageElement.src = selectElement.value;
+    }
+  </script>
+</body>
+</html>

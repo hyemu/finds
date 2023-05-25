@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+</head>
+<link href="main.css" rel="stylesheet">
+    <style>
+
+
+  html {
+      background: linear-gradient(45deg, #000, #fbfbe9, #da4670);
+      background-size: 600% 600%;
+      animation: pulsatingGradient 20s ease infinite;
+    }
+
+    @keyframes pulsatingGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .hero01-container {
+  position: inherit;
+  overflow: hidden;
+  margin-bottom: 0; /* Remove the default margin-bottom value */
+}
+
+
+.hero01-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0; /* Remove the left padding */
+  padding-right: 0; /* Remove the right padding */
+  margin: 0; /* Remove any default margins */
+  position: fixed;
+  width: 100%;
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0; /* Position the navbar at the left edge of the page */
+  right: 0; /* Position the navbar at the right edge of the page */
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+}
+
+    .hero01-navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .hero01-navbar a:hover {
+      color: #ccc;
+    }
+
+    .hero01-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .hero01-logo img {
+      width: 120px;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+
+    .hero01-text11 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero01-text13 {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .hero01-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 0; /* Add margin-top to push the image right below the container */
+}
+.login-box {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 770px;
+  margin-left: 340px;
+  padding: 40px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+.register-switch a {
+  color: #333;
+  text-decoration: none;
+}
+
+.register-switch a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+    <body>
+     <div class="hero01-container">
+        <div class="hero01-hero01">
+          <div class="hero01-navbar">
+            <div class="hero01-logo">
+              <a href="index.html"><img alt="Logo" src="logo.png"></a>
+              <div class="hero01-frame4">
+                <span class="hero01-text"><a href="shop.html">Shop</a></span>
+                <span class="hero01-text02"><a href="team.html">Team</a></span>
+                <span class="hero01-text04"><a href="about.html">About</a></span>
+                <div class="hero01-group6">
+                  <img alt="SearchI162" src="search9.svg" class="hero01-search">
+                  <span class="hero01-text06" style="color: white;">Search</span>
+                </div>
+              </div>
+              <img alt="Line1I162" src="line36t.svg" class="hero01-line1">
+              <div class="hero01-frame5">
+                <div class="hero01-group4">
+                  <span class="hero01-text08" style="color: white;">3</span>
+                  <img alt="VectorI162" src="vectorer7.svg" class="hero01-vector">
+                </div>
+                <span class="hero01-text09" style="color: white;">Login</span>
+              </div>
+    
+  <div class="container">
+    <div class="login-box">
+      <div class="login-header">
+        <h2>Login</h2>
+      </div>
+      <form class="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="register-switch">Don't have an account? <a href="#">Register</a></p>
+      </form>
+      <form class="register-form">
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+        <p class="register-switch">Already have an account? <a href="#">Login</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="checkout.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+    html {
+      background: linear-gradient(45deg, #000, #fbfbe9, #da4670);
+      background-size: 600% 600%;
+      animation: pulsatingGradient 20s ease infinite;
+    }
+
+    @keyframes pulsatingGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .hero01-container {
+      position: inherit;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    .hero01-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      color: #fff;
+      font-size: 40px;
+    }
+
+    .hero01-navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .hero01-navbar a:hover {
+      color: #ccc;
+    }
+
+    .hero01-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .hero01-logo img {
+      width: 120px;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+
+    /* Checkout and Shipping Form Styles */
+
+    .checkout-form {
+      max-width: 600px;
+      margin: 150px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .checkout-form h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group input[type="submit"] {
+      width: auto;
+      padding: 10px 20px;
+      background-color: #da4670;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #c7375a;
+    }
+
+    /* Payment and Shipping Options Styles */
+
+    .payment-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .payment-option-label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .payment-option-label,
+    .shipping-option-label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .shipping-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .shipping-option {
+      display: flex;
+      align-items: center;
+    }
+
+    .shipping-option input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .shipping-option-label {
+      font-size: 14px;
+    }
+    .submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #da4670;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #c7375a;
+}
+
+  </style>
+</head>
+<body>
+  <div class="hero01-container">
+    <div class="hero01-hero01">
+      <div class="hero01-navbar">
+        <div class="hero01-logo">
+          <a href="index.html"><img alt="Logo" src="logo.png"></a>
+          <div class="hero01-frame4">
+            <span class="hero01-text"><a href="shop.html">Shop</a></span>
+            <span class="hero01-text02"><a href="team.html">Team</a></span>
+            <span class="hero01-text04"><a href="about.html">About</a></span>
+            <div class="hero01-group6">
+              <img alt="SearchI162" src="search9.svg" class="hero01-search">
+              <span class="hero01-text06" style="color: white;">Search</span>
+            </div>
+          </div>
+          <img alt="Line1I162" src="line36t.svg" class="hero01-line1">
+          <div class="hero01-frame5">
+            <div class="hero01-group4">
+              <span class="hero01-text08" style="color: white;">3</span>
+              <img alt="VectorI162" src="vectorer7.svg" class="hero01-vector">
+            </div>
+            <span class="hero01-text09" style="color: white;">Login</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout and Shipping Form -->
+  <div class="checkout-form">
+    <h2>Checkout and Shipping</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter your address" required>
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="Enter your city" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" required>
+          <option value="">Select your country</option>
+          <option value="us">Philippines</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ca">Canada</option>
+          <!-- Add more country options here -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+      </div>
+      
+      <!-- Payment Options -->
+      <div class="form-group payment-options">
+        <span class="payment-option-label">Payment Method:</span>
+        <label>
+          <input type="radio" name="payment" value="applepay">
+          <img src="applepay.png" alt="Apple Pay">
+        </label>
+        <label>
+          <input type="radio" name="payment" value="paypal">
+          <img src="paypal.png" alt="PayPal">
+        </label>
+      </div>
+
+      <!-- Shipping Options -->
+      <div class="form-group shipping-options">
+        <span class="shipping-option-label">Shipping Method:</span>
+        <div class="shipping-option">
+          <input type="radio" name="shipping" value="jnt">
+          <label class="shipping-option-label">J&amp;T Express</label>
+        </div>
+        <div class="shipping-option">
+          <input type="radio" name="shipping" value="lbc">
+          <label class="shipping-option-label">LBC Express</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <a href="ordercomplete.html" class="submit-button">Submit</a>      </div>
+    </form>
+  </div>
+</body>
+</html>

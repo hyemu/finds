@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./main.css" rel="stylesheet">
+
+   <style>
+    .product-page {
+  display: flex;
+  align-items: center;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  /* Add other font properties as needed */
+}
+
+.product-image {
+      width: 200px; /* Adjust the width as needed */
+      height: auto; /* This will maintain the aspect ratio of the image */
+      flex: 1;
+      padding-right: 20px;
+    }
+.product-details {
+  flex: 1;
+}
+
+.product-title {
+    font-family: 'SF Pro Display';
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.product-description {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.product-image-select {
+  margin-bottom: 20px;
+}
+
+.checkout-button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+   </style>
+</head>
+<body>
+    <div class="hero01-container">
+        <div class="hero01-hero01">
+          <div class="hero01-navbar">
+            <img alt="RectangleI162" src="public/playground_assets/rectangle.png" class="hero01-rectangle">
+            <div class="hero01-frame4">
+              <span class="hero01-text"><a href="shop.html">Shop</a></span>
+              <span class="hero01-text02">Stories</span>
+              <span class="hero01-text04">About</span>
+              <div class="hero01-group6">
+                <img alt="SearchI162" src="public/playground_assets/search9.svg" class="hero01-search">
+                <span class="hero01-text06">Search</span>
+              </div>
+            </div>
+            <img alt="Line1I162" src="public/playground_assets/line36t.svg" class="hero01-line1">
+            <div class="hero01-frame5">
+              <div class="hero01-group4">
+                <span class="hero01-text08">3</span>
+                <img alt="VectorI162" src="public/playground_assets/vectorer7.svg" class="hero01-vector">
+              </div>
+              <span class="hero01-text09">Login</span>
+            </div>
+          </div>
+  <div class="product-page">
+    <div class="product-image">
+      <img src="public\playground_assets\asuna.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h1 class="product-title">boa hanCOCK</h1>
+      <p class="product-description">Product Description</p>
+      <select class="product-image-select" onchange="changeImage(this)">
+        <option value="public\playground_assets\asuna.png">Front View</option>
+        <option value="public\playground_assets\back.png">Back View</option>
+      </select>
+      <button class="checkout-button">Checkout</button>
+    </div>
+  </div>
+  
+  <script>
+    function changeImage(selectElement) {
+      var imageElement = document.querySelector('.product-image img');
+      imageElement.src = selectElement.value;
+    }
+  </script>
+</body>
+</html>

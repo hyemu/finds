@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="main.css" rel="stylesheet">
+  <style>
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('SFPRODISPLAYREGULAR.OTF') format('opentype');
+
+}
+html {
+      background: linear-gradient(45deg, #000, #fbfbe9, #da4670);
+      background-size: 600% 600%;
+      animation: pulsatingGradient 20s ease infinite;
+    }
+
+    @keyframes pulsatingGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+    /* Header styles */
+    .hero01-container {
+  position: inherit;
+  overflow: hidden;
+  margin-bottom: 0; /* Remove the default margin-bottom value */
+}
+
+
+.hero01-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0; /* Remove the left padding */
+  padding-right: 0; /* Remove the right padding */
+  margin: 0; /* Remove any default margins */
+  position: fixed;
+  width: 100%;
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0; /* Position the navbar at the left edge of the page */
+  right: 0; /* Position the navbar at the right edge of the page */
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+}
+
+    .hero01-navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .hero01-navbar a:hover {
+      color: #ccc;
+    }
+
+    .hero01-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .hero01-logo img {
+      width: 120px;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+
+    .hero01-text11 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero01-text13 {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .hero01-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-top: 0; /* Add margin-top to push the image right below the container */
+}
+
+    /* Main content styles */
+    .content-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 36px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 15px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #444;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer styles */
+    .footer-container {
+      background-color: #8f7373;
+      padding: 40px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .newsletter input[type="email"] {
+      width: 250px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter button:hover {
+      background-color: #eee;
+    }
+
+    .footer-navigation {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-navigation a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-navigation a:hover {
+      color: #ccc;
+    }
+
+    /* Animation styles */
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-up {
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .hero01-container,
+    .title,
+    .description,
+    .button,
+    .image-gallery img,
+    .footer-container {
+      opacity: 0;
+      animation: fade-in 1s ease forwards;
+      font-family: 'SF Pro Display';
+;
+    }
+
+    .title,
+    .description,
+    .button,
+    .image-gallery img {
+      animation: slide-up 0.5s ease forwards;
+      font-family: 'SF Pro Display';
+
+    }
+
+    .footer-container {
+      animation-delay: 0.5s;
+      font-family: 'SF Pro Display';
+
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero01-container">
+    <div class="hero01-hero01">
+      <div class="hero01-navbar">
+        <div class="hero01-logo">
+          <a href="index.html"><img alt="Logo" src="logo.png"></a>
+          <div class="hero01-frame4">
+            <span class="hero01-text"><a href="shop.html">Shop</a></span>
+            <span class="hero01-text02"><a href="team.html">Team</a></span>
+            <span class="hero01-text04"><a href="about.html">About</a></span>
+            <div class="hero01-group6">
+              <img alt="SearchI162" src="search9.svg" class="hero01-search">
+              <span class="hero01-text06"  style="color: white;">Search</span>
+            </div>
+          </div>
+          <img alt="Line1I162" src="line36t.svg" class="hero01-line1">
+          <div class="hero01-frame5">
+            <div class="hero01-group4">
+              <span class="hero01-text08"  style="color: white;">3</span>
+              <img alt="VectorI162" src="vectorer7.svg" class="hero01-vector">
+            </div>
+            <span class="hero01-text09"  style="color: white;"><a href="login.html">Login</span></a>
+          </div>
+            
+ 
+        <nav>
+          </div>
+        </nav>
+        </div>
+      </div>
+      <br><br><br><br>
+      <img alt="R115027" src="logo.png" class="hero01-r11">
+      <span class="hero01-text11 Heading02">Collect. Curate. Inspire</span>
+      <span class="hero01-text13 Paragraph01">Passionately curating hobbies and collections for every enthusiast.</span>
+      <div class="hero01-secondary"></div>
+    </div>
+    <img alt="Image770" src="Heavyarms EW.png" class="hero01-image">
+  </div>
+  <div class="content-container">
+    <div class="title">Our Latest Collections</div>
+    <div class="description">Discover our latest toy and photocard collections on our website. <br> From vintage to modern, we have something for every collector. Start your collection today!</div>
+    <a href="#" class="button">Shop All</a>
+    <div class="image-gallery">
+      <img src="image1.jpg" alt="Collection 1">
+      <img src="image2.jpg" alt="Collection 2">
+      <img src="image3.jpg" alt="Collection 3">
+    </div>
+
+    <div class="footer-container">
+      <div class="newsletter">
+        <div>Sign up for our newsletter</div>
+        <div>Be the first to know about our special offers, new product launches, and events.</div>
+        <div>
+          <input type="email" placeholder="Email Address">
+          <button>Sign up</button>
+        </div>
+      </div>
+      <div class="footer-navigation">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Team</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

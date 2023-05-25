@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="main.css" rel="stylesheet">
+  <style>
+    @font-face {
+  font-family: 'SF Pro Display';
+  src: url('SFPRODISPLAYREGULAR.OTF') format('opentype');
+
+}
+  html {
+      background: linear-gradient(45deg, #000, #fbfbe9, #da4670);
+      background-size: 600% 600%;
+      animation: pulsatingGradient 20s ease infinite;
+    }
+
+
+    
+    .hero01-container {
+      position: inherit;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    .hero01-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      color: #fff;
+      font-size: 40px;
+    }
+
+    .hero01-navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .hero01-navbar a:hover {
+      color: #ccc;
+    }
+
+    .hero01-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .hero01-logo img {
+      width: 120px;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+
+    .order-completed-container {
+      max-width: 1000px;
+      margin-left: 460px;
+      padding: 20px;
+      text-align: center;
+      font-family: 'SF Pro Display';
+    }
+    
+    .order-completed-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .order-id {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    
+    .go-back-button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      height: 40px;
+      margin: 0 auto;
+      border: none;
+      border-radius: 4px;
+      background-color: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .go-back-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero01-container">
+    <div class="hero01-hero01">
+      <div class="hero01-navbar">
+        <div class="hero01-logo">
+          <a href="index.html"><img alt="Logo" src="logo.png"></a>
+          <div class="hero01-frame4">
+            <span class="hero01-text"><a href="shop.html">Shop</a></span>
+            <span class="hero01-text02"><a href="team.html">Team</a></span>
+            <span class="hero01-text04"><a href="about.html">About</a></span>
+            <div class="hero01-group6">
+              <img alt="SearchI162" src="search9.svg" class="hero01-search">
+              <span class="hero01-text06" style="color: white;">Search</span>
+            </div>
+          </div>
+          <img alt="Line1I162" src="line36t.svg" class="hero01-line1">
+          <div class="hero01-frame5">
+            <div class="hero01-group4">
+              <span class="hero01-text08" style="color: white;">3</span>
+              <img alt="VectorI162" src="vectorer7.svg" class="hero01-vector">
+            </div>
+            <span class="hero01-text09" style="color: white;">Login</span>
+          </div>
+<br>
+  <br><div class="order-completed-container">
+    <br><br><br><br><br><br><br><h1 class="order-completed-title">Order Completed</h1>
+    <p class="order-id">Your order ID is: <span id="order-id"></span></p>
+    <button class="go-back-button" onclick="goBackHome()">Go Back Home</button>
+  </div>
+
+  <script>
+    // Generate a random order ID
+    var orderID = generateOrderID();
+    document.getElementById("order-id").innerText = orderID;
+    
+    function generateOrderID() {
+      // Generate a random string or use any other logic to generate the order ID
+      return "ORD-" + Math.floor(Math.random() * 1000000);
+    }
+    
+    function goBackHome() {
+      // Redirect or navigate to the home page
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
